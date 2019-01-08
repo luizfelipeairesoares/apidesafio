@@ -1,0 +1,3100 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# desafio-gcom
+
+Desafio gcom iOS - 01/2019
+
+## Rounds [/rounds]
+
+### List All Rounds [GET]
+
++ Response 200 (application/json)
+
+        {
+            "rounds": 38,
+            "current": 38
+        }
+        
+## Games [/games/{round}]
+
+### List All Games of a Round [GET]
+
++ Parameters
+    + round: 38 (required, number) - Round number
+    
++ Response 200 (application/json)
+
+        [
+            {
+                "data_realizacao": "2018-12-01T19:00",
+                "hora_realizacao": "19:00",
+                "id": 221539,
+                "placar_oficial_mandante": 1,
+                "placar_oficial_visitante": 0,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "equipes": {
+                    "mandante": {
+                            "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/atletico_mg_60x60.png",
+                            "id": 282,
+                            "nome_popular": "Atl\u00e9tico-MG",
+                            "sigla": "CAM"
+                    },
+                    "visitante": {
+                            "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/botafogo_60x60.png",
+                            "id": 263,
+                            "nome_popular": "Botafogo",
+                            "sigla": "BOT"
+                    }
+                },
+                "sede": {
+                    "nome_popular": "Independ\u00eancia"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/mg\/futebol\/brasileirao-serie-a\/jogo\/01-12-2018\/atletico-mg-botafogo.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-01T19:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/flamengo_60x60.png",
+                        "id": 262,
+                        "nome_popular": "Flamengo",
+                        "sigla": "FLA"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2015/06/24/atletico-pr_2015_65.png",
+                        "id": 293,
+                        "nome_popular": "Athletico-PR",
+                        "sigla": "CAP"
+                    }
+                },
+                "hora_realizacao": "19:00",
+                "id": 221544,
+                "placar_oficial_mandante": 1,
+                "placar_oficial_visitante": 2,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Maracan\u00e3"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/rj\/futebol\/brasileirao-serie-a\/jogo\/01-12-2018\/flamengo-atletico-pr.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https:\/\/s.glbimg.com\/es\/sde\/f\/equipes\/2018\/03\/11\/parana.svg",
+                        "id": 289,
+                        "nome_popular": "Paran\u00e1",
+                        "sigla": "PAR"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/internacional_60x60.png",
+                        "id": 285,
+                        "nome_popular": "Internacional",
+                        "sigla": "INT"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221540,
+                "placar_oficial_mandante": 1,
+                "placar_oficial_visitante": 1,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Durival Britto"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/pr\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/parana-internacional.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2015/05/06/chapecoense_60x60.png",
+                        "id": 315,
+                        "nome_popular": "Chapecoense",
+                        "sigla": "CHA"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/sao_paulo_60x60.png",
+                        "id": 276,
+                        "nome_popular": "S\u00e3o Paulo",
+                        "sigla": "SAO"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221541,
+                "placar_oficial_mandante": 1,
+                "placar_oficial_visitante": 0,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Arena Cond\u00e1"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/sc\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/chapecoense-sao-paulo.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/bahia_60x60.png",
+                        "id": 265,
+                        "nome_popular": "Bahia",
+                        "sigla": "BAH"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2015/04/29/cruzeiro_65.png",
+                        "id": 283,
+                        "nome_popular": "Cruzeiro",
+                        "sigla": "CRU"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221542,
+                "placar_oficial_mandante": 0,
+                "placar_oficial_visitante": 0,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                "nome_popular": "Pitua\u00e7u"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/ba\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/bahia-cruzeiro.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2015/05/05/fluminense-escudo-65x65.png",
+                        "id": 266,
+                        "nome_popular": "Fluminense",
+                        "sigla": "FLU"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/america_mg_60x60.png",
+                        "id": 327,
+                        "nome_popular": "Am\u00e9rica-MG",
+                        "sigla": "AME"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221543,
+                "placar_oficial_mandante": 1,
+                "placar_oficial_visitante": 0,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Maracan\u00e3"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/rj\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/fluminense-america-mg.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/ceara_60x60.png",
+                        "id": 354,
+                        "nome_popular": "Cear\u00e1",
+                        "sigla": "CEA"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/vasco_60x60.png",
+                        "id": 267,
+                        "nome_popular": "Vasco",
+                        "sigla": "VAS"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221545,
+                "placar_oficial_mandante": 0,
+                "placar_oficial_visitante": 0,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Castel\u00e3o (CE)"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/ce\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/ceara-vasco.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/sport_60x60.png",
+                        "id": 292,
+                        "nome_popular": "Sport",
+                        "sigla": "SPO"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/santos_60x60.png",
+                        "id": 277,
+                        "nome_popular": "Santos",
+                        "sigla": "SAN"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221546,
+                "placar_oficial_mandante": 2,
+                "placar_oficial_visitante": 1,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Ilha do Retiro"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/pe\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/sport-santos.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/palmeiras_60x60.png",
+                        "id": 275,
+                        "nome_popular": "Palmeiras",
+                        "sigla": "PAL"
+                },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/vitoria_60x60.png",
+                        "id": 287,
+                        "nome_popular": "Vit\u00f3ria",
+                        "sigla": "VIT"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221547,
+                "placar_oficial_mandante": 3,
+                "placar_oficial_visitante": 2,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Arena Palmeiras"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/sp\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/palmeiras-vitoria.ghtml"
+                }
+            },
+            {
+                "data_realizacao": "2018-12-02T17:00",
+                "equipes": {
+                    "mandante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/gremio_60x60.png",
+                        "id": 284,
+                        "nome_popular": "Gr\u00eamio",
+                        "sigla": "GRE"
+                    },
+                    "visitante": {
+                        "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/corinthians_60x60.png",
+                        "id": 264,
+                        "nome_popular": "Corinthians",
+                        "sigla": "COR"
+                    }
+                },
+                "hora_realizacao": "17:00",
+                "id": 221548,
+                "placar_oficial_mandante": 1,
+                "placar_oficial_visitante": 0,
+                "placar_penaltis_mandante": null,
+                "placar_penaltis_visitante": null,
+                "sede": {
+                    "nome_popular": "Arena do Gr\u00eamio"
+                },
+                "transmissao": {
+                    "label": "veja como foi",
+                    "url": "https:\/\/globoesporte.globo.com\/rs\/futebol\/brasileirao-serie-a\/jogo\/02-12-2018\/gremio-corinthians.ghtml"
+                }
+            }
+        ]
+
+## Gameplay [/gameplay/{game_id}]
+
+### List All plays of a Game [GET]
+
++ Parameters
+    + game_id: 221544 (required, number) - Game id number
+    
++ Response 200 (application/json)
+
+        [
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"adn3j",
+                      "text":"\"Muito trabalho, a gente conseguiu sair daquela situa\u00e7\u00e3o (de ser vice-lanterna). Conseguimos botar o nosso ritmo. Falei pro Lucho que nesse jogo eu ia me esfor\u00e7ar para fazer o gol e saiu dos p\u00e9s dele o passe\"",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:57:56.122Z",
+                "disputaPenalti":"",
+                "id":"95b91ab3-f976-40b8-80ee-c36153bb0c54",
+                "momento":"",
+                "periodo":"FIM_DE_JOGO",
+                "periodoLabel":"Fim de jogo",
+                "tipoLance":"NORMAL",
+                "titulo":"Rosseto d\u00e1 entrevista",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"fuig8",
+                      "text":"Atl\u00e9tico-PR vence o Flamengo no Maracan\u00e3",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:55:45.682Z",
+                "disputaPenalti":"",
+                "id":"22862c4a-bb91-4515-ad69-cc8ec3ff575f",
+                "momento":"50:58",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"FIM DE PAPO",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"17gc5",
+                      "text":"Wellington vibra a cada desarme. Atl\u00e9tico com muita disposi\u00e7\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:55:01.753Z",
+                "disputaPenalti":"",
+                "id":"30d39af8-bf26-4d8b-b6e0-442a7c6d1b5e",
+                "momento":"50:30",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"3mnhv",
+                      "text":"Paquet\u00e1 recebe na \u00e1rea e chuta mal",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:54:21.942Z",
+                "disputaPenalti":"",
+                "id":"bd6c1a06-11c9-4ef4-9734-8eb9dbafa2b4",
+                "momento":"49:41",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9o37s",
+                      "text":"Termina em MG: Atl\u00e9tico-MG vence o Botafogo e se classifica para a Libertadores. Para o Furac\u00e3o resta agora a classifica\u00e7\u00e3o via Sul-Americana ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:54:10.510Z",
+                "disputaPenalti":"",
+                "id":"03b19cea-786c-49cd-bb1d-4ea28d214c0d",
+                "momento":"49:39",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"812b1",
+                      "text":"Furac\u00e3o troca bem os passes, enquanto Flamengo n\u00e3o consegue reagir ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:52:57.200Z",
+                "disputaPenalti":"",
+                "id":"cf02f407-03e4-4562-95f2-912e9de0a91b",
+                "momento":"48:10",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"27ro9",
+                      "text":"\u00c1rbitro d\u00e1 seis minutos de acr\u00e9scimos",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:52:09.976Z",
+                "disputaPenalti":"",
+                "id":"90cd2dcb-9267-483c-9e2d-d7888b023309",
+                "momento":"45:00",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Vamos a 51",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Sai: Camacho\nEntra: Bruno Guimar\u00e3es",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:49:09.141Z",
+                "disputaPenalti":"",
+                "id":"094d85d6-3601-4ff8-a480-86d04f396dae",
+                "jogador":68770,
+                "jogadorReserva":98352,
+                "momento":"44:32",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"SUBSTITUICAO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"7ke91",
+                      "text":"Mais uma falta de Paquet\u00e1, agora em Rosseto",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:47:08.571Z",
+                "disputaPenalti":"",
+                "id":"6c2ddd37-ce51-475d-8896-b9256b36a0dd",
+                "momento":"42:22",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"evl44",
+                      "text":"Paquet\u00e1 e Ren\u00e9 chutam, e nas duas vezes a bola explode em defensores ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:46:30.557Z",
+                "disputaPenalti":"",
+                "id":"736f6a7c-5d01-4cd0-a973-e4d479138f42",
+                "momento":"41:33",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Fla pressiona",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"d8evm",
+                      "text":"Por reclama\u00e7\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:44:29.044Z",
+                "disputaPenalti":"",
+                "id":"4026060d-e93a-4507-84fb-f95bec79704f",
+                "momento":"39:57",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"DORIVAL TAMB\u00c9M EXPULSO",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"5k08l",
+                      "text":"Cart\u00e3o amarelo para Willian Ar\u00e3o, por falta em Rony ap\u00f3s tomar chap\u00e9u",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:44:18.034Z",
+                "disputaPenalti":"",
+                "id":"85e31016-dbce-4241-b7f2-0701899375fa",
+                "momento":"33:00",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"5mpeg",
+                      "text":"Cart\u00e3o vermelho para Rony, por dar uma ombrada em Berr\u00edo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:43:48.465Z",
+                "disputaPenalti":"",
+                "id":"89115cbf-b7c8-40b1-9463-d083f02dd3dd",
+                "jogador":91607,
+                "momento":"39:05",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"CARTAO_VERMELHO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Cart\u00e3o amarelo para Lucas Paquet\u00e1, por reclama\u00e7\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:42:21.514Z",
+                "disputaPenalti":"",
+                "id":"9187b2b7-b485-4c5c-bfd0-aa4336936902",
+                "jogador":94930,
+                "momento":"37:44",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"CARTAO_AMARELO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Cart\u00e3o vermelho para Willian Ar\u00e3o, por falta em Rony. Jogador do Fla recebeu o segundo amarelo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:42:12.143Z",
+                "disputaPenalti":"",
+                "id":"5fd1fbe0-932d-4a6c-968f-09c3e2965fc7",
+                "jogador":78478,
+                "momento":"37:31",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"CARTAO_VERMELHO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"cmphd",
+                      "text":"Vitinho recebe na \u00e1rea, gira e manda com efeito. Mas Felipe Alves faz grande defesa ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:41:41.399Z",
+                "disputaPenalti":"",
+                "id":"078a0198-ce94-44d7-a30d-c20fd9efb26c",
+                "jogador":78435,
+                "momento":"36:42",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"QUE DEFESA!!!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"47rtv",
+                      "text":"Ar\u00e3o solta um m\u00edssil de longe, e a bola tira tinta da trave ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:39:40.671Z",
+                "disputaPenalti":"",
+                "id":"b95ee70a-a980-43d0-996b-4f9ac837a3ae",
+                "jogador":78478,
+                "momento":"34:40",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"QUE ISSO???",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Sai: Piris da Motta\nEntra: Vitinho",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:39:04.946Z",
+                "disputaPenalti":"",
+                "id":"5bb90dd4-51ab-4dfc-b9cd-6f8d3413f1f3",
+                "jogador":95802,
+                "jogadorReserva":78435,
+                "momento":"33:00",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"SUBSTITUICAO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"b8bav",
+                      "text":"Camacho leva a pior e fica ca\u00eddo, sentindo dores ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:37:43.394Z",
+                "disputaPenalti":"",
+                "id":"363cea19-6ff3-47e8-9fa1-2e5f549b7409",
+                "momento":"33:10",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Sai: Par\u00e1\nEntra: Rodinei",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:33:47.249Z",
+                "disputaPenalti":"",
+                "id":"a3c42ee3-7e42-411f-b647-dd474b30638a",
+                "jogador":62086,
+                "jogadorReserva":73992,
+                "momento":"29:13",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"SUBSTITUICAO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"56j9q",
+                      "text":"\u00c9 de Rony!!!! Marcio Azevedo d\u00e1 caneta em Berr\u00edo, aciona Lucho, que toca para Rony dominar, arrumar para o meio e soltar uma bomba na gaveta. Que pintura!!!",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:30:26.193Z",
+                "disputaPenalti":"",
+                "id":"79dd4f4f-44fe-40e2-bb8c-7fb4e94af74a",
+                "jogador":91607,
+                "momento":"25:38",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"GOL",
+                "titulo":"GOLA\u00c7O DO ATL\u00c9TICO!!!!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"e5tkv",
+                      "text":"Uribe domina na \u00e1rea e solta bomba. Passou perto!",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:29:45.939Z",
+                "disputaPenalti":"",
+                "id":"b91d1fe1-bd66-477a-81c6-1855ac5e54cf",
+                "jogador":78415,
+                "momento":"24:52",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"QUASE, QUASE!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Sai: \u00c9verton Ribeiro\nEntra: Berr\u00edo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:28:48.591Z",
+                "disputaPenalti":"",
+                "id":"8d545d2c-4500-4d6c-a9a4-647a7ec694ca",
+                "jogador":51772,
+                "jogadorReserva":85300,
+                "momento":"24:05",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"SUBSTITUICAO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"71t5s",
+                      "text":"Wellington d\u00e1 cotovelada em Paquet\u00e1, que fica furioso. Mas volante do Atl\u00e9tico pede desculpas. Arbitragem n\u00e3o viu ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:28:17.962Z",
+                "disputaPenalti":"",
+                "id":"7b95f998-8d12-4341-8cdf-bcaedba2d816",
+                "momento":"23:16",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"EITA!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"bmdlb",
+                      "text":"Flamengo chega pela ponta, Paquet\u00e1 solta uma bomba para o meio da \u00e1rea, mas a defesa alivia o perigo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:26:35.013Z",
+                "disputaPenalti":"",
+                "id":"624eb1ac-d2de-4b93-9e21-8815bb39bf9f",
+                "momento":"21:40",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Cart\u00e3o amarelo para Par\u00e1, por falta em Rony",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:24:57.699Z",
+                "disputaPenalti":"",
+                "id":"dbc4fec6-6647-40a7-a8ac-1b348a6fd04d",
+                "jogador":62086,
+                "momento":"20:23",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":262,
+                "tipoLance":"CARTAO_AMARELO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"4svr",
+                      "text":"\u00c9 de Matheus Rossetto!!! Uribe sai jogando mal, Furac\u00e3o faz uma bela troca de passes que termina com assist\u00eancia de Lucho para o volante dominar, girar e marcar",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:23:56.874Z",
+                "disputaPenalti":"",
+                "id":"ab97a2a6-abc4-439a-af12-402943c14cf6",
+                "jogador":86766,
+                "momento":"19:17",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"GOL",
+                "titulo":"GOL DO ATL\u00c9TICO!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Sai: Diego Ferreira\nEntra: Lucho Gonz\u00e1lez",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:23:44.985Z",
+                "disputaPenalti":"",
+                "id":"a57cda20-fe7e-4eea-aa0d-83acbe9453e1",
+                "jogador":91783,
+                "jogadorReserva":71479,
+                "momento":"18:58",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"SUBSTITUICAO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"59dcm",
+                      "text":"Tabela curta acaba em chute de Rony de p\u00e9 esquerdo, com perigo",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:23:26.566Z",
+                "disputaPenalti":"",
+                "id":"0feb2318-7f7f-418a-b078-024676fd9edd",
+                "jogador":91607,
+                "momento":"18:27",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"OLHA O FURAC\u00c3O ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"dp7af",
+                      "text":"Paquet\u00e1 for\u00e7a a marca\u00e7\u00e3o e acaba fazendo falta. Jogo ruim do meia rubro-negro",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:21:49.333Z",
+                "disputaPenalti":"",
+                "id":"3c895a3c-dda2-4875-9f0c-5ae9b04b248c",
+                "momento":"16:57",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"fhegn",
+                      "text":"Par\u00e1 tabela com Ar\u00e3o, mas a bola vai muito forte e sai pela linha de fundo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:20:59.199Z",
+                "disputaPenalti":"",
+                "id":"927b4f95-0d52-458b-9ee1-2a8387ba5eb1",
+                "momento":"16:12",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"54ogj",
+                      "text":"Flamengo parou de jogar. Ritmo lento",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:20:15.614Z",
+                "disputaPenalti":"",
+                "id":"831ecc56-3962-47d3-8d1b-b8163ffcf922",
+                "momento":"15:26",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Hora de mexer?",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"4c2k5",
+                      "text":"Paquet\u00e1 \u00e9 lan\u00e7ado, mas n\u00e3o consegue chegar antes de Diego Ferreira. Jogo t\u00edmido do jogador que se despede hoje do time rubro-negro ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:16:59.260Z",
+                "disputaPenalti":"",
+                "id":"81eb0562-55e9-48fc-a335-0e12d45da3ff",
+                "momento":"11:49",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"6gt7a",
+                      "text":"Atl\u00e9tico vai ficando com a bola, mas pouco amea\u00e7ando ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:16:07.052Z",
+                "disputaPenalti":"",
+                "id":"6f50c71a-86c4-4b42-944e-02096f0e6580",
+                "momento":"11:35",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"dvjiu",
+                      "text":"M\u00e1rcio Azevedo manda na \u00e1rea, mas C\u00e9sar segura ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:14:11.194Z",
+                "disputaPenalti":"",
+                "id":"f0637ae4-2d21-418a-9506-3f5154d9f67e",
+                "momento":"09:18",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"bb0qi",
+                      "text":"Diego cruza, L\u00e9o Duarte sobe bem, mas cabeceia por cima ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:12:17.460Z",
+                "disputaPenalti":"",
+                "id":"9c29dff8-46f5-4f3b-b7aa-98c21de9297c",
+                "momento":"07:20",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Chegada interessante ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"8s8nn",
+                      "text":"Agora \u00e9 Ar\u00e3o quem \u00e9 tocado por baixo e sofre a falta ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:11:20.485Z",
+                "disputaPenalti":"",
+                "id":"7c8442ab-1324-4658-850d-266d2ea696ee",
+                "momento":"06:33",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"ckqvd",
+                      "text":"C\u00e9sar chuta grama ao sair jogando. Rony fica com a bola, tenta colocar de fora da \u00e1rea, mas manda por cima",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:09:56.572Z",
+                "disputaPenalti":"",
+                "id":"420fcc5e-6cce-42c7-97b0-3d0d4eeca1db",
+                "jogador":91607,
+                "momento":"04:59",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"FALTOU CAPRICHO",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"dv873",
+                      "text":"Paquet\u00e1 tira da \u00e1rea de cabe\u00e7a, na volta, Rony recebe dentro da \u00e1rea, mas isola ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:08:33.410Z",
+                "disputaPenalti":"",
+                "id":"ca3e22c8-1713-4d97-8f60-5f380fac5da7",
+                "momento":"03:35",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"PEGOU MAL",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"b8b43",
+                      "text":"Diego vai ao fundo e cruza, Ren\u00ea escora. Escanteio para o Furac\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:07:52.129Z",
+                "disputaPenalti":"",
+                "id":"e9a5d5f0-a532-4a3a-a617-60606c5df0ec",
+                "momento":"03:20",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"2ntss",
+                      "text":"Flamengo troca bom n\u00famero de passes, e cruzamento de Par\u00e1 rasteiro fica nas m\u00e3os de Felipe Alves ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:06:35.215Z",
+                "disputaPenalti":"",
+                "id":"316867a3-c250-4fc1-840e-335d93428ee4",
+                "momento":"01:40",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"ari90",
+                      "text":"Diego ganha a jogada com falta. Girava para ficar de frente para o gol ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:05:34.271Z",
+                "disputaPenalti":"",
+                "id":"a8d1af88-2a67-4072-b13c-d9d2b1fe4fcd",
+                "momento":"00:42",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"fmavl",
+                      "text":"Come\u00e7a o segundo tempo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:05:03.138Z",
+                "disputaPenalti":"",
+                "id":"53381e45-bd23-48c4-a399-1c5321b5a0de",
+                "momento":"00:22",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"BOLA ROLANDO",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Sai: Marcelo Cirino\nEntra: Pablo",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:04:42.924Z",
+                "disputaPenalti":"",
+                "id":"a0610434-1ab6-4a07-ae28-1b8e8ccba5bd",
+                "jogador":69022,
+                "jogadorReserva":69138,
+                "momento":"00:04",
+                "periodo":"SEGUNDO_TEMPO",
+                "periodoLabel":"2\u00ba tempo",
+                "time":293,
+                "tipoLance":"SUBSTITUICAO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Cart\u00e3o amarelo para Piris da Motta",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T22:02:34.339Z",
+                "disputaPenalti":"",
+                "id":"89033f67-8d3e-45c6-abb2-a24c5c968fb7",
+                "jogador":95802,
+                "momento":"34:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":262,
+                "tipoLance":"CARTAO_AMARELO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"ebjho",
+                      "text":"\"Tive duas les\u00f5es  seguidas, isso que me complicou. Faz quatro cinco meses que eu voltei, por op\u00e7\u00e3o do treinador n\u00e3o joguei. Respeito. Agora muito feliz com esse gol\"",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:48:57.284Z",
+                "disputaPenalti":"",
+                "id":"9bf46ca3-5de5-4040-b323-4ee0f9463b65",
+                "momento":"45:45",
+                "periodo":"INTERVALO",
+                "periodoLabel":"Intervalo",
+                "tipoLance":"NORMAL",
+                "titulo":"Rhodolfo d\u00e1 entrevista na sa\u00edda de campo ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9e89q",
+                      "text":"Termina o jogo no Maracan\u00e3 ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:47:27.574Z",
+                "disputaPenalti":"",
+                "id":"d7097528-25bb-43db-9500-23d7a7db23cf",
+                "momento":"47:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"FIM DE PAPO",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"ap6r2",
+                      "text":"Diego lan\u00e7a para a \u00e1rea, Rhodolfo se estica todo, mas n\u00e3o consegue alcan\u00e7ar a bola ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:46:56.342Z",
+                "disputaPenalti":"",
+                "id":"168e9899-6600-43b1-82e3-58b91bbeb50d",
+                "momento":"46:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"5rabj",
+                      "text":"Paquet\u00e1 carrega a bola por alguns metros at\u00e9 sofrer a falta",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:46:04.347Z",
+                "disputaPenalti":"",
+                "id":"501727bf-219a-4592-8fe4-4492231a6d0f",
+                "momento":"45:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"2efgr",
+                      "text":"Paquet\u00e1 cruza rasteiro, Diego faz corta-luz, Marcio Azevedo fura, Everton Ribeiro domina e manda com muita classe, mas Felipe Alves tira na ponta dos dedos ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:43:14.442Z",
+                "disputaPenalti":"",
+                "id":"9709b8bc-0503-4187-b938-3086f69a8d7b",
+                "jogador":51772,
+                "momento":"42:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":262,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"QUASE UM BELO GOL",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"emi8k",
+                      "text":"Paquet\u00e1 toca entre as pernas de Diego Ferreira achando Ren\u00ea em \u00f3tima posi\u00e7\u00e3o. O cruzamento para Uribe desvia na zaga e passa tamb\u00e9m por Everton Ribeiro",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:41:49.720Z",
+                "disputaPenalti":"",
+                "id":"4bca0c88-540e-4b75-b7b7-4e4e3b45fb7a",
+                "momento":"40:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Boa chegada ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Cart\u00e3o amarelo para Wellington, por entrada em Uribe",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:38:04.659Z",
+                "disputaPenalti":"",
+                "id":"4bc9e4e4-508d-447c-9536-ff69df23d6fa",
+                "jogador":62129,
+                "momento":"37:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":293,
+                "tipoLance":"CARTAO_AMARELO",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"15icr",
+                      "text":"Uribe sofre entrada forte, \u00e1rbitro d\u00e1 vantagem, Diego manda para fora, em chute de longa dist\u00e2ncia ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:37:06.241Z",
+                "disputaPenalti":"",
+                "id":"ae0c5df0-4b80-4e27-b9ba-54ab5abd0539",
+                "jogador":38909,
+                "momento":"34:57",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":262,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"Boa trama ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9vgd",
+                      "text":"Ar\u00e3o cruza, Paquet\u00e1 escora de cabe\u00e7a, e Uribe, tamb\u00e9m de cabe\u00e7a, manda por cima do gol ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:36:09.724Z",
+                "disputaPenalti":"",
+                "id":"ba8db774-6c63-4897-86fe-a51f6c4e3e53",
+                "momento":"35:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":262,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"Boa chegada do Fla",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"2rlo1",
+                      "text":"Paquet\u00e1 tenta a jogada individual, mas \u00e9 facilmente desarmado ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:35:21.926Z",
+                "disputaPenalti":"",
+                "id":"ccc82824-95e1-4100-a9b5-dee16ec5cc2b",
+                "momento":"34:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"eknub",
+                      "text":"Diego reclama muito de falta n\u00e3o marcada ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:34:31.711Z",
+                "disputaPenalti":"",
+                "id":"b1176fd6-205a-4a77-8e6f-610701769a90",
+                "momento":"34:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"9j9f3",
+                      "text":"Atl\u00e9tico-PR sai jogando bem trocando passes, mas o Flamengo tem marcado bem na sequ\u00eancia ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:32:13.731Z",
+                "disputaPenalti":"",
+                "id":"78be21ba-bb77-431d-97fd-4dd377bfff7a",
+                "momento":"32:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"1ijin",
+                      "text":"Camacho arrisca de fora da \u00e1rea e manda por cima do gol ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:30:11.459Z",
+                "disputaPenalti":"",
+                "id":"573c1d29-1cdb-4158-9619-00bf8353a724",
+                "momento":"29:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"fi9oq",
+                      "text":"Uribe chega no mano a mano para invadir a \u00e1rea, mas se enrola",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:29:49.227Z",
+                "disputaPenalti":"",
+                "id":"4acc9c88-e141-4843-b75c-37439c9f57ac",
+                "momento":"29:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"4tjde",
+                      "text":"Diego chega firme em Camacho com carrinho, e logo pede desculpas ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:28:05.063Z",
+                "disputaPenalti":"",
+                "id":"fe01b79e-8242-4019-9b18-1f430839c4a9",
+                "momento":"27:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"8ucun",
+                      "text":"Ren\u00ea cruza na segunda trave, e Everton Ribeiro quase chega. Zaga cortou para escanteio ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:26:34.911Z",
+                "disputaPenalti":"",
+                "id":"bfe7401f-9563-4098-96fc-bec85fe621dd",
+                "momento":"26:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"b6ao1",
+                      "text":"\u00c9 de Rhodolfo!!!! Diego cobra escanteio na marca de p\u00eanalti, zagueir\u00e3o escora e a bola vai no cantinho. Pegou na trave antes de entrar, Felipe Alves se esticou, mas n\u00e3o conseguiu a defesa ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:22:46.007Z",
+                "disputaPenalti":"",
+                "id":"ce82cd61-ac3a-4f16-9328-8e957bc343ec",
+                "jogador":42501,
+                "momento":"22:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":262,
+                "tipoLance":"GOL",
+                "titulo":"GOL DO FLAMENGO!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"as8kb",
+                      "text":"Paquet\u00e1 recebe na esquerda, mas cruza muito mal. Na volta, Par\u00e1 ganha escanteio ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:22:12.673Z",
+                "disputaPenalti":"",
+                "id":"d8d7d258-7081-4ab1-a8f2-aaa63a7ee40d",
+                "momento":"21:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"76dbp",
+                      "text":"",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:21:18.327Z",
+                "disputaPenalti":"",
+                "id":"eac3ca10-e879-4178-8d93-3cd231ea8b44",
+                "momento":"20:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Fam\u00edlia de Paquet\u00e1 na torcida ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"3vojl",
+                      "text":"Cazares faz 1 a 0 para o Galo contra o Botafogo. Com esse resultado, o Atl\u00e9tico n\u00e3o conseguiria a vaga na Libertadores via Brasileir\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:20:03.802Z",
+                "disputaPenalti":"",
+                "id":"ef3160ef-888f-4936-a8a0-01976c0b4daa",
+                "momento":"18:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"DE OLHO EM JOGO QUE INTERESSA AO FURAC\u00c3O",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"2hc96",
+                      "text":"Z\u00e9 Ivaldo sobe para cabecear, divide com C\u00e9sar, e arbitragem marca falta ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:18:51.134Z",
+                "disputaPenalti":"",
+                "id":"adae932f-e1dc-4d85-a5bc-d41f8cacac59",
+                "momento":"17:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"aevd2",
+                      "text":"Rony sofre falta de \u00c9verton Ribeiro. Atacante do Atl\u00e9tico-PR \u00e9 liso",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:17:37.164Z",
+                "disputaPenalti":"",
+                "id":"952dc801-5cb0-4dca-b8ab-19a5ae2999f6",
+                "momento":"17:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"a0sbg",
+                      "text":"Flamengo equilibrou mais a posse de bola, mas est\u00e1 com dificuldade na cria\u00e7\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:16:29.190Z",
+                "disputaPenalti":"",
+                "id":"529f9ca4-94d0-45cc-97d4-ea30bb63b7aa",
+                "momento":"15:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"8f918",
+                      "text":"Atl\u00e9tico-PR toca bem a bola, n\u00e3o d\u00e1 chut\u00e3o",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:14:26.832Z",
+                "disputaPenalti":"",
+                "id":"46d10d16-44dc-48cd-982e-64dceeaa6c88",
+                "momento":"12:13",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Furac\u00e3o \u00e0 vontade ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"a01k5",
+                      "text":"Ar\u00e3o tabela com Par\u00e1 e chega bem pela ponta-direita, mas o cruzamento fica na zaga ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:12:43.985Z",
+                "disputaPenalti":"",
+                "id":"25906071-6704-4b76-9992-c62dce8483b0",
+                "momento":"12:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"1sgrn",
+                      "text":"Atl\u00e9tico-PR chega em boa trama. De M\u00e1rcio Azevedo para Rony, que aciona Cirino na \u00e1rea. O atacante domina no piv\u00f4 e toca para Camacho bater em cima de Ren\u00ea",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:11:22.052Z",
+                "disputaPenalti":"",
+                "id":"7505bbc7-558a-4eb7-9907-ee001186a443",
+                "momento":"10:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"Olha o Furac\u00e3o",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"92hm8",
+                      "text":"Diego cruza, L\u00e9o Duarte escora de cabe\u00e7a, mas a bola fica limpa para Felipe Alves segurar ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:09:22.433Z",
+                "disputaPenalti":"",
+                "id":"b4718b34-d5fe-4edb-8676-40b307aa4dd3",
+                "momento":"08:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"5gj82",
+                      "text":"Z\u00e9 Ivaldo chega mostrando as travas em jogada com Ar\u00e3o, e \u00e1rbitro marca falta ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:08:32.086Z",
+                "disputaPenalti":"",
+                "id":"626fe3e7-6f0a-43cb-a57e-c5f4f71440a9",
+                "momento":"08:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"4i0f7",
+                      "text":"Lateral do Furac\u00e3o avan\u00e7a e solta uma bomba para a boa defesa de C\u00e9sar, que espalmou e ativou o contra-ataque",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:06:39.402Z",
+                "disputaPenalti":"",
+                "id":"f28adcf9-4b1f-4375-b3b5-2f9e28b89d24",
+                "jogador":42491,
+                "momento":"05:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "time":293,
+                "tipoLance":"IMPORTANTE",
+                "titulo":"QUE PANCADA!",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"75h92",
+                      "text":"Jogo come\u00e7a estudado, com erros de passes",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:04:44.028Z",
+                "disputaPenalti":"",
+                "id":"7d4b5f15-c401-455b-92f6-fffce46919b4",
+                "momento":"04:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"2l4fp",
+                      "text":"Ar\u00e3o sofre a primeira falta do jogo, em disputa no meio do campo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:01:40.380Z",
+                "disputaPenalti":"",
+                "id":"90b8973b-45c1-400f-9208-0240ca558a47",
+                "momento":"01:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"8ombr",
+                      "text":"BOLA ROLANDO",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T21:00:24.962Z",
+                "disputaPenalti":"",
+                "id":"694a0b19-37c0-407a-912b-a9ea6b9590c9",
+                "momento":"00:00",
+                "periodo":"PRIMEIRO_TEMPO",
+                "periodoLabel":"1\u00ba tempo",
+                "tipoLance":"NORMAL",
+                "titulo":"COME\u00c7A O JOGO",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"ckabm",
+                      "text":"\"Foco total no jogo de hoje, colocamos uma equipe descansada. Depois pensaremos na final\"",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T20:59:18.083Z",
+                "disputaPenalti":"",
+                "id":"38c12b88-7329-4dea-8173-3fa4ac33a5c3",
+                "momento":"",
+                "periodo":"PRE_JOGO",
+                "periodoLabel":"Pr\u00e9-Jogo",
+                "tipoLance":"NORMAL",
+                "titulo":"Tiago Nunes fala",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"2r6f6",
+                      "text":"\"O Palmeiras foi campe\u00e3o com todos os m\u00e9ritos, mas o Flamengo fez um campeonato digno para buscar conquistas num curto espa\u00e7o de tempo\"",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T20:58:47.111Z",
+                "disputaPenalti":"",
+                "id":"7aa7441c-e5c2-4af0-ad5d-03feec2fb517",
+                "momento":"",
+                "periodo":"PRE_JOGO",
+                "periodoLabel":"Pr\u00e9-Jogo",
+                "tipoLance":"NORMAL",
+                "titulo":"Dorival fala",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"5r4tg",
+                      "text":"Paquet\u00e1 chora no momento do hino nacional",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T20:56:01.680Z",
+                "disputaPenalti":"",
+                "id":"4e677ace-feca-47d5-8b68-338d90723910",
+                "momento":"",
+                "periodo":"PRE_JOGO",
+                "periodoLabel":"Pr\u00e9-Jogo",
+                "tipoLance":"NORMAL",
+                "titulo":"Est\u00e1 emocionado",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"eq8ft",
+                      "text":"Os dois times j\u00e1 est\u00e3o em campo ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T20:52:47.548Z",
+                "disputaPenalti":"",
+                "id":"ff0e14d8-acb9-46a0-8787-e14dc4767c08",
+                "momento":"",
+                "periodo":"PRE_JOGO",
+                "periodoLabel":"Pr\u00e9-Jogo",
+                "tipoLance":"NORMAL",
+                "titulo":"Festa na entrada ",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              },
+              {
+                "corpo":{
+                  "blocks":[
+                    {
+                      "data":{
+            
+                      },
+                      "depth":0,
+                      "entityRanges":[
+            
+                      ],
+                      "inlineStyleRanges":[
+            
+                      ],
+                      "key":"20l20",
+                      "text":"Boa tarde, amigos! Iniciamos agora a cobertura em Tempo Real de Flamengo x Atl\u00e9tico-PR, v\u00e1lido pela \u00faltima rodada do Campeonato Brasileiro ",
+                      "type":"unstyled"
+                    }
+                  ],
+                  "entityMap":{
+            
+                  }
+                },
+                "created":"2018-12-01T19:30:50.946Z",
+                "disputaPenalti":"",
+                "id":"accedde7-e78b-46c0-85b8-5ddac84b817c",
+                "momento":"",
+                "periodo":"PRE_JOGO",
+                "periodoLabel":"Pr\u00e9-Jogo",
+                "tipoLance":"NORMAL",
+                "titulo":"",
+                "transmissaoId":"9f26a827-dd3e-4b14-94bf-afd8aeb9b095"
+              }
+        ]
